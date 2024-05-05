@@ -1,0 +1,141 @@
+:root {
+  --body:hsl(0, 1%, 21%);
+  --text:hsl(0, 0%, 93%);
+  --accent:linear-gradient(45deg,hsl(265, 71%, 62%),hsl(306, 100%, 44%),hsl(288, 81%, 53%));
+}
+* {
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 0.93rem;
+  /* color: var(--text); */
+}
+#root {
+  background: var(--body);
+  min-height:100dvh;
+  margin-top:0;
+}
+.base {
+  position: relative;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem;
+  position: fixed;
+  left:0;
+  right: 0;
+}
+.header.scrolled {
+  background: hsl(278, 81%, 53%);
+}
+.header .logo {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.header .nav-wrap {
+  /* flex-grow: 0.5; */
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.header .nav-wrap .navv {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 1rem;
+  align-items: stretch;
+  margin-bottom: 0;
+}
+.header .nav-wrap .navv li .navv-link {
+  text-decoration: none;
+  color: var(--text);
+  padding:0.6rem 0.8rem 0.6rem 0.6rem;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.header .nav-wrap .navv li .navv-link:hover {
+  background: var(--accent);
+  letter-spacing: 0.1rem;
+}
+.header .nav-wrap .navv li .active {
+  background: var(--accent);
+  letter-spacing: 0.1rem;
+  box-shadow: 0 0 3px var(--text);
+}
+.main {
+  padding-top:5rem;
+}
+.main .main-content {
+  min-height:95dvh;
+  padding:1rem;
+}
+.main .main-content .home {
+  min-height: inherit;
+  align-items: center;
+}
+.main .main-content .home h1 {
+  font-size: 6rem;
+  font-weight: bolder;
+  background: var(--accent);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.main .main-content .home h2 {
+  font-size: 3rem;
+  color: var(--text);
+}
+.main .main-content .home h3 {
+  font-weight: bold;
+  color: var(--text);
+}
+.home .profil {
+  width:300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  background: var(--accent);
+  padding: 1rem;
+  border-radius: 200px;
+
+}
+.home .profil img {
+  border-radius: 200px;
+}
+.about h2 {
+  margin-bottom: 1rem;
+  background: var(--accent);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.about h2 .icon {
+  color: hsl(278, 81%, 53%);
+}
+.about ul {
+  padding-left: 1rem;
+  list-style:square
+}
+.about ul li {
+  line-height: 2rem;
+  color: var(--text);
+
+}
+.about .biodata table tr {
+  line-height: 2rem;
+}
+.contact .social a .icons{
+  color: var(--text);
+  transition: 0.3s ease-in-out;
+}
+.contact .social a .icons:hover {
+  color: hsl(278, 81%, 53%);
+  font-size: 3rem;
+}
+.contact h2 {
+  color: var(--text);
+}
