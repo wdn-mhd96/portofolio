@@ -15,6 +15,7 @@
   background: var(--body);
   min-height:100dvh;
   margin-top:0;
+  width:100vw;
 }
 .base {
   position: relative;
