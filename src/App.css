@@ -142,3 +142,34 @@
 .contact h2 {
   color: var(--text);
 }
+
+@media (max-width:768px) {
+  .header {
+    padding:1rem 2rem;
+  }
+  .header .nav-wrap {
+    display: none;
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(50, 50, 50, 0.5);
+    z-index: 2;
+  }
+  .header .nav-wrap.toggled {
+    display: flex;
+  }
+  .header .nav-wrap .navv {
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;   
+  }
+  .header .nav-wrap .navv li  .navv-link {
+    width: 100%;
+  }
+}
