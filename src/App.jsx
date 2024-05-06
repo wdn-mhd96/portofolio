@@ -7,8 +7,8 @@ import Project from './pages/project'
 import Contact from './pages/contact'
 
 function App() {
+  document.title = "Muhammad WIldani"
   const [count, setCount] = useState(0)
-  document.title("Muhammad Wildani")
   return (
     <>
       <Base>
