@@ -27,7 +27,7 @@ export default function Header() {
     return (
         <div className={`header ${(scrolled) && "scrolled"}`}>
             <i><a href="" className="logo">DANS</a></i>
-            <span onClick={toggleNav}><FontAwesomeIcon icon={faBars} style={{color:'var(--text)'}} size="2x"/></span>
+            <span onClick={toggleNav}  className="toggle-button"><FontAwesomeIcon icon={faBars} style={{color:'var(--text)'}} size="2x"/></span>
             <Navbar visible={nav} close = {closeNav}/>
         </div>
     )

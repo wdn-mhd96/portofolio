@@ -37,6 +37,9 @@
   font-size: 2rem;
   font-weight: bolder;
 }
+.toggle-button {
+  display: none;
+}
 .header .nav-wrap {
   /* flex-grow: 0.5; */
   display: flex;
@@ -146,6 +149,9 @@
 @media (max-width:768px) {
   .header {
     padding:1rem 2rem;
+  }
+  .toggle-button {
+    display: block;
   }
   .header .nav-wrap {
     display: none;
