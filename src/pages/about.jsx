@@ -6,6 +6,7 @@ export default function About() {
     return (
         <>
         <div className="row about">
+            <h1 className="title">About</h1>
             <div className="col-md-6">    
                 <div className="experience mb-5">
                     <h2><FontAwesomeIcon icon={faUserAstronaut} size="1x" className="mx-2 icon"/>Experience</h2>
