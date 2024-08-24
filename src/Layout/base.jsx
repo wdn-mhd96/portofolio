@@ -4,7 +4,7 @@ import Footer from "./footer";
 
 export default function Base({children}) {
     return (
-        <div className="container base">
+        <div className=" base">
             <Header />
             {children}
             <Footer />

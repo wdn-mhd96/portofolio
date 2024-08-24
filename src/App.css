@@ -25,10 +25,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 6rem;
+  padding: 1rem 3rem;
   position: fixed;
   left:0;
   right: 0;
+  z-index: 10;
 }
 .header.scrolled {
   background: var(--nav);
@@ -78,15 +79,42 @@
   padding-top:5rem;
 }
 .main .main-content {
-  min-height:95dvh;
+  min-height:90dvh;
   padding:1rem;
 }
 .main .main-content .home {
   min-height: inherit;
   align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+.home .left-pane {
+  grid-column: 1/3;
+  grid-row: 1;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:1rem;
+}
+.home .right-pane {
+  grid-column: 2/4;
+  grid-row: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.home .right-pane .profil {
+  
+}
+.home .profil img {
+  filter: grayscale();
+  width: 500px;
+  height: auto;
 }
 .main .main-content .home h1 {
-  font-size: 6rem;
+  font-size: 4.5rem;
   font-weight: bolder;
   background: var(--accent);
   -webkit-text-fill-color: transparent;
@@ -100,6 +128,12 @@
   font-weight: bold;
   color: var(--text);
 }
+.main .main-content .home .left-pane a {
+  background: var(--nav);
+  text-decoration: none;
+  color: var(--text);
+  padding: 12px 24px;
+}
 .title {
   font-size: 6rem;
   font-weight: bolder;
@@ -108,23 +142,7 @@
   -webkit-background-clip: text;
   padding: 0.5rem 0rem; 
 }
-.home .profil {
-  width:300px;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  background: var(--accent);
-  padding: 1rem;
-  border-radius: 300px;
 
-}
-.home .profil img {
-  border-radius: 300px;
-  width: 300px;
-  height: 270px;
-  overflow: hidden;
-}
 .about h2 {
   margin-bottom: 1rem;
   background: var(--accent);
@@ -213,6 +231,10 @@
  font-weight: lighter;
 }
 @media (max-width:768px) {
+  #root {
+    width: 100%;
+    overflow: auto;
+  }
   .header {
     padding:1rem 2rem;
   }
@@ -244,5 +266,11 @@
   }
   .header .nav-wrap .navv li  .navv-link {
     width: 100%;
+  }
+  .left-pane {
+    width: 100%;
+  }
+  .right-pane .profil img{
+    display: none;
   }
 }

@@ -1,16 +1,16 @@
 import React from "react";
-import  profil  from '../assets/profil.jpg'
+import  profil  from '../assets/profil.png'
 
 export default function Home() {
     return (
         <>
-        <div className="row home">
-            <div className="col-md-6">
+        <div className="home">
+            <div className="left-pane">
+                <h1>Thoughtful Design, Intelligent Development</h1>
                 <h2>Muhammad Wildani</h2>
-                <h1>Web Developer</h1>
-                <h3><i>HTML, PHP, CSS, Javascript</i></h3>
+            <a href="https://wa.me/6289668118794?text=Hai Wildan, Saya Tertarik Menggunakan Jasa Anda Sebagai Web Developer" target="__blank" className="">Connect with Me</a>
             </div>
-            <div className="col-md-6 m-auto">
+            <div className="right-pane">
                 <div className="profil">
                     <img src={profil} alt="" className="img-fluid"/>
                 </div>

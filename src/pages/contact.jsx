@@ -12,7 +12,6 @@ export default function Contact() {
             <div className="social my-5">
             <a href="https://www.instagram.com/m.wldani/?utm_source=qr&igsh=ZmdtMnI0NDhkeTli" target="__blank"  ><FontAwesomeIcon icon={faInstagram} size="3x" className="icons"/></a>
             <a href="https://wa.me/6289668118794?text=Hai Wildan, Saya Tertarik Menggunakan Jasa Anda Sebagai Web Developer" target="__blank" className=""><FontAwesomeIcon icon={faWhatsapp} size="3x" className="icons"/></a>
-            {/* <a href="https://wa.me/6289668118794?text=p balap" target="__blank"><FontAwesomeIcon icon={faGithub} size="3x" className="icons"/></a> */}
             </div>
         </div>
         </>
